@@ -1,3 +1,4 @@
+  
 <!DOCTYPE html>
 <html lang="en">
 
@@ -39,29 +40,80 @@
             </ul>
         </div>
     </nav>
-    <div class="row content">
-        <div class="col-sm-12 col-md-8 col-lg-8">
-            <h2 class="text-left">Summary: Comparing weather data by latitude</h2>
-            <hr class="my-4">
-            <img src="visualizations/LatTemp_plot.png" alt="Latitude_Temp" class="rounded main-image">
-            <p>The purpose of this project was to analyze how weather changes depending on latitude. Data is from the OpenWeatherMap API with a dataset of more than 500 cities.</p>
-           
-        </div>
-         <div class="col-sm-12 col-md-4 col-lg-4" >
-            <h2 class="text-left">Visualizations</h2>
-            <hr class="my-4">
-            <a href="maxtemp.html">
-                <img src="visualizations/LatTemp_plot.png" class="rounded float-left thumbnail" alt="Latitude_Temp">
-            </a>
-            <a href="Humidity.html">
-                <img src="visualizations/LatHum_plot.png" class="rounded float right thumbnail" alt="Latitude_Humidity">
-            </a>
-            <a href="Cloudiness.html">
-                <img src="visualizations/LatCloud.png" class="rounded float-left  thumbnail" alt="Latitude_Clouds">
-            </a>
-            <a href="WindSpeed.html">
-                <img src="visualizations/LatWind_plot.png" class="rounded float right  thumbnail" alt="Latitude_Wind">
-            </a>
+
+    <div class="container">
+        <div class="row row-grid">
+            <div class="col-md-8">
+                <div class="box box-left">
+                    <section id="intro">
+                        <h1>Summary</h1>
+                        <section id="summary">
+                            <p>This project utilized APIs and Python to answer a question,
+                                “What’s the weather like as we get closer to the equator?” with real-world data.
+                            </p>
+
+                            <p> With weather data for more than 500 cities around the Earth from the OpenWeatherMap API, 
+                                I created a dataframe of the weather information. Temperature, humidity, wind speed and cloudiness
+                                was gathered and used for each city, then turned into visual graphs based on latitude, 
+                                using MatPlotLib, to find relations between the weather data and distance from the equator.
+                            </p>
+
+                            <ul>
+                                <li>Temperature (F) vs. Latitude</li>
+                                <li>Humidity (%) vs. Latitude</li>
+                                <li>Cloudiness (%) vs. Latitude</li>
+                                <li>Wind Speed (mph) vs. Latitude</li>
+
+                            </ul>
+
+                        </section>
+
+                    </section>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="box box-right">
+                    <h2>Visualizations</h2>
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-3 col-md-6">
+                            <figure>
+                                <a href="maxtemp.html">
+                                    <img id="landing-viz" src="LatTemp_plot.png" alt="LatTemp">
+                                </a>
+                            </figure>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-3 col-md-6">
+                            <figure>
+                                <a href="Humidity.html">
+                                    <img id="landing-viz" src="LatHum_plot.png" alt="LatHum">
+                                </a>
+                            </figure>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-3 col-md-6">
+                            <figure>
+                                <a href="Cloudiness.html">
+                                    <img id="landing-viz" src="LatCloud_plot.png" alt="LatCloud">
+                                </a>
+                            </figure>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-3 col-md-6">
+                            <figure>
+                                <a href="WindSpeed.html">
+                                    <img id="landing-viz" src="LatWind_plot.png" alt="LatWind">
+                                </a>
+                            </figure>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </body>
